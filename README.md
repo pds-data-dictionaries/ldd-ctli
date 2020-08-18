@@ -4,7 +4,6 @@ The CTLI dictionary provides a set of type values for instruments for use in ins
 
 After cloning the files, do the following:
 
-
 # Documentation
 
 User Guide: TBD
