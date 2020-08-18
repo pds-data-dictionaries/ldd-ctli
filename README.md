@@ -1,6 +1,8 @@
-# {LDD Name} Local Data Dictionary (LDD)
+# Context Type List: Instrument Local Data Dictionary (LDD)
 
-The {LDD Name} dictionary contains classes that describe a fictitious mission. It can be used as a starting point for creating a new local data dictionary (LDD). After cloning the files, do the following:
+The CTLI dictionary provides a set of type values for instruments for use in instrument context products.
+
+After cloning the files, do the following:
 
 
 # Documentation
