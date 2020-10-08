@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model
-    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch"
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <Ingest_LDD
     xmlns="http://pds.nasa.gov/pds4/pds/v1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 
-                        https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+                        https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd"
+                        >
   <name>Type_List</name>
-  <ldd_version_id>1.1.0.1</ldd_version_id>
+  <ldd_version_id>1.2.0.0</ldd_version_id>
+  <dictionary_type>Discipline</dictionary_type>
   <full_name>Lyle Huber</full_name>
   <steward_id>ctli</steward_id>
   <namespace_id>ctli</namespace_id>
@@ -23,6 +25,7 @@
   <!-- Modification History
     Version 1.0.0.0 - initial dictionary
     Version 1.1.0.0 - added subtype
+    Version 1.2.0.0 - added Photometer
     -->
 
   <DD_Attribute>
@@ -297,7 +300,14 @@
           A neutron detector detects and/or counts neutrons.
         </value_meaning>
       </DD_Permissible_Value>
-      
+        
+      <DD_Permissible_Value>
+        <value>Photometer</value>
+        <value_meaning>
+          A photometer measures the intensity of electromagnetic radiation over a wavelength range at infrared and shorter wavelengths.
+        </value_meaning>
+      </DD_Permissible_Value>
+
       <DD_Permissible_Value>
         <value>Polarimeter</value>
         <value_meaning>
@@ -457,7 +467,7 @@
     <local_identifier>subtype</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Lyle Huber</submitter_name>
-    <definition>The subtype attribute narrows the range of the type attribute by identifying a specialization or subset of the instrument type.</definition>
+    <definition>The subtype attribute provides additional nuance or clarity to the type attribute.</definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>UTF8_Short_String_Collapsed</value_data_type>
