@@ -1,13 +1,13 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        11.3.2
-   LDD Version Id:        1.1.0.1
+   LDDTool Version        0.0.0
+   LDD Version Id:        1.2.0.0
    LDD Label Version Id:  1.0
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Tue Aug 18 16:33:18 UTC 2020
+   Time                   Tue Oct 13 16:46:45 UTC 2020
    Common Schema          [PDS4_PDS_1E00.xsd]
    Common Schematron      [PDS4_PDS_1E00.sch]
    IM Version Id:         1.14.0.0
@@ -32,28 +32,15 @@ Summary:
    Classes                1
    Attributes             2
    Associations           2
-   Error messages         1
-   Warning messages       2
-   Information messages   10
+   Error messages         0
+   Warning messages       0
+   Information messages   0
 
 Detailed validation messages
-   ERROR    Attribute: <subtype> - The 'type' attribute must have at least one permissible value.
-   WARNING  Header:  - New steward has been specified:ctli
-   WARNING  Header:  - New namespace id has been specified:ctli
-   INFO     Attribute: <type> - The default minimum characters provided by the attribute's data type is being overridden with 1
-   INFO     Attribute: <type> - The default maximum characters provided by the attribute's data type is being overridden with 255
-   INFO     Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
-   INFO     Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
-   INFO     Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
-   INFO     Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
-   INFO     Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
-   INFO     Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
-   INFO     Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
-   INFO     Attribute: <subtype> - This local attribute has a duplicate in the PDS4 data dictionary.
 
 Parsed Input - Header:
    LDD Name               Type_List
-   LDD Version            1.1.0.1
+   LDD Version            1.2.0.0
    Full Name              Lyle Huber
    Steward                ctli
    Namespace Id           ctli
@@ -78,7 +65,7 @@ Parsed Input - Attributes:
    name                   subtype
    version                1.14
    value data type        UTF8_Short_String_Collapsed
-   description            The subtype attribute narrows the range of the type attribute by identifying a specialization or subset of the instrument type.
+   description            The subtype attribute provides additional nuance or clarity to the type attribute.
 
 Parsed Input - Classes:
 
