@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:ctli  Version:1.2.0.0 - Wed Oct 14 02:55:38 UTC 2020 -->
-  <!-- Generated from the PDS4 Information Model Version 1.14.0.0 - System Build 10b -->
+  <!-- PDS4 Schematron for Name Space Id:ctli  Version:1.2.0.0 - Tue May 04 04:54:35 UTC 2021 -->
+  <!-- Generated from the PDS4 Information Model Version 1.16.0.0 - System Build 11.1 -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
@@ -21,6 +21,7 @@
   <sch:pattern>
     <sch:rule context="ctli:Type_List/ctli:type">
       <sch:assert test=". = ('Accelerometer', 'Altimeter', 'Atmospheric Structure Instrument', 'Camera', 'Charged Particle Detector', 'Dust Analyzer', 'Electric Field Instrument', 'Gamma Ray Detector', 'Gas Analyzer', 'Gravimeter', 'Imager', 'Imaging Spectrometer', 'Interferometer', 'Langmuir Probe', 'Lidar', 'Magnetometer', 'Mass Spectrometer', 'Meteorology', 'Microphone', 'Microscope', 'Mutual Impedance Probe', 'Nephelometer', 'Neutral Particle Detector', 'Neutron Detector', 'Photometer', 'Polarimeter', 'Radar', 'Radio Receiver', 'Radio Science', 'Radiometer', 'Relaxation Sounder', 'Seismometer', 'Spacecraft Sensor', 'Spectrometer', 'Spectrum Analyzer', 'Sub-Surface Tool', 'Surface Tool', 'Temperature Sensor', 'Weather Station', 'Wind Tunnel')">
+        <title>ctli:Type_List/ctli:type/ctli:type</title>
         The attribute ctli:type must be equal to one of the following values 'Accelerometer', 'Altimeter', 'Atmospheric Structure Instrument', 'Camera', 'Charged Particle Detector', 'Dust Analyzer', 'Electric Field Instrument', 'Gamma Ray Detector', 'Gas Analyzer', 'Gravimeter', 'Imager', 'Imaging Spectrometer', 'Interferometer', 'Langmuir Probe', 'Lidar', 'Magnetometer', 'Mass Spectrometer', 'Meteorology', 'Microphone', 'Microscope', 'Mutual Impedance Probe', 'Nephelometer', 'Neutral Particle Detector', 'Neutron Detector', 'Photometer', 'Polarimeter', 'Radar', 'Radio Receiver', 'Radio Science', 'Radiometer', 'Relaxation Sounder', 'Seismometer', 'Spacecraft Sensor', 'Spectrometer', 'Spectrum Analyzer', 'Sub-Surface Tool', 'Surface Tool', 'Temperature Sensor', 'Weather Station', 'Wind Tunnel'.</sch:assert>
     </sch:rule>
   </sch:pattern>
