@@ -1,18 +1,18 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        13.0.2
-   LDD Version Id:        1.2.0.0
-   LDD Label Version Id:  1.0
+   LDDTool Version        10.0.0
+   LDD Version Id:        2.0.0.0
+   LDD Label Version Id:  1.22
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Sat Jun 26 19:02:42 UTC 2021
-   Common Schema          [PDS4_PDS_1E00.xsd]
-   Common Schematron      [PDS4_PDS_1E00.sch]
-   IM Version Id:         1.14.0.0
+   Time                   Thu Feb 24 00:26:20 UTC 2022
+   Common Schema          [PDS4_PDS_1G00.xsd]
+   Common Schematron      [PDS4_PDS_1G00.sch]
+   IM Version Id:         1.16.0.0
    IM Namespace Id:       pds
-   IM Label Version Id:   1.0
+   IM Label Version Id:   1.22
    IM Object Model        [UpperModel.pont]
    IM Data Dictionary     [dd11179.pins]
    IM Configuration File  [MDPTNConfigClassDisp.xml]
@@ -40,7 +40,7 @@ Detailed validation messages
 
 Parsed Input - Header:
    LDD Name               Type_List
-   LDD Version            1.2.0.0
+   LDD Version            2.0.0.0
    Full Name              Lyle Huber
    Steward                ctli
    Namespace Id           ctli
@@ -49,21 +49,22 @@ Parsed Input - Header:
     value meanings for use by the enumerated attribute  type  in the Instrument class.
     Modification History:
       2019-11-14: First version delivered by the Instrument Type Steward Team.
+      2021-08-31: Version 2.0 to reorganize the Type_List class.
   
-   Last Modification Time 2020-03-04T21:00:00Z
+   Last Modification Time 2021-08-31T21:00:00Z
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:
 
    name                   type
-   version                1.14
+   version                1.16
    value data type        UTF8_Short_String_Collapsed
    description             The type attribute provides a character string which uniquely identifies the object. 
    minimum characters     1
    maximum characters     255
 
    name                   subtype
-   version                1.14
+   version                1.16
    value data type        UTF8_Short_String_Collapsed
    description            The subtype attribute provides additional nuance or clarity to the type attribute.
 
@@ -79,7 +80,7 @@ Parsed Input - Classes:
 
       local identifier      type
       minimum occurrences   1
-      maximum occurrences   *
+      maximum occurrences   1
       reference type        attribute_of
 
       local identifier      subtype

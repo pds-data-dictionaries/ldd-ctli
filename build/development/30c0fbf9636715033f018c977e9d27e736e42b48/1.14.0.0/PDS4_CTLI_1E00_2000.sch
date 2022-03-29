@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:ctli  Version:1.2.0.0 - Sat Jun 26 19:03:45 UTC 2021 -->
-  <!-- Generated from the PDS4 Information Model Version 1.16.0.0 - System Build 11.1 -->
+  <!-- PDS4 Schematron for Name Space Id:ctli  Version:2.0.0.0 - Thu Feb 24 00:26:21 UTC 2022 -->
+  <!-- Generated from the PDS4 Information Model Version 1.14.0.0 - System Build 10b -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
@@ -8,7 +8,7 @@
 
   <sch:ns uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
   <sch:ns uri="http://pds.nasa.gov/pds4/pds/v1" prefix="pds"/>
-  <sch:ns uri="http://pds.nasa.gov/pds4/ctli/v1" prefix="ctli"/>
+  <sch:ns uri="http://pds.nasa.gov/pds4/ctli/v2" prefix="ctli"/>
 
 		   <!-- ================================================ -->
 		   <!-- NOTE:  There are two types of schematron rules.  -->
@@ -22,7 +22,7 @@
     <sch:rule context="ctli:Type_List/ctli:type">
       <sch:assert test=". = ('Accelerometer', 'Altimeter', 'Atmospheric Structure Instrument', 'Camera', 'Charged Particle Detector', 'Dust Analyzer', 'Electric Field Instrument', 'Gamma Ray Detector', 'Gas Analyzer', 'Gravimeter', 'Imager', 'Imaging Spectrometer', 'Interferometer', 'Langmuir Probe', 'Lidar', 'Magnetometer', 'Mass Spectrometer', 'Meteorology', 'Microphone', 'Microscope', 'Mutual Impedance Probe', 'Nephelometer', 'Neutral Particle Detector', 'Neutron Detector', 'Photometer', 'Polarimeter', 'Radar', 'Radio Receiver', 'Radio Science', 'Radiometer', 'Relaxation Sounder', 'Seismometer', 'Spacecraft Sensor', 'Spectrometer', 'Spectrum Analyzer', 'Sub-Surface Tool', 'Surface Tool', 'Temperature Sensor', 'Weather Station', 'Wind Tunnel')">
         <title>ctli:Type_List/ctli:type/ctli:type</title>
-        The attribute ctli:type must be equal to one of the following values 'Accelerometer', 'Altimeter', 'Atmospheric Structure Instrument', 'Camera', 'Charged Particle Detector', 'Dust Analyzer', 'Electric Field Instrument', 'Gamma Ray Detector', 'Gas Analyzer', 'Gravimeter', 'Imager', 'Imaging Spectrometer', 'Interferometer', 'Langmuir Probe', 'Lidar', 'Magnetometer', 'Mass Spectrometer', 'Meteorology', 'Microphone', 'Microscope', 'Mutual Impedance Probe', 'Nephelometer', 'Neutral Particle Detector', 'Neutron Detector', 'Photometer', 'Polarimeter', 'Radar', 'Radio Receiver', 'Radio Science', 'Radiometer', 'Relaxation Sounder', 'Seismometer', 'Spacecraft Sensor', 'Spectrometer', 'Spectrum Analyzer', 'Sub-Surface Tool', 'Surface Tool', 'Temperature Sensor', 'Weather Station', 'Wind Tunnel'.</sch:assert>
+        The attribute ctli:Type_List/ctli:type must be equal to one of the following values 'Accelerometer', 'Altimeter', 'Atmospheric Structure Instrument', 'Camera', 'Charged Particle Detector', 'Dust Analyzer', 'Electric Field Instrument', 'Gamma Ray Detector', 'Gas Analyzer', 'Gravimeter', 'Imager', 'Imaging Spectrometer', 'Interferometer', 'Langmuir Probe', 'Lidar', 'Magnetometer', 'Mass Spectrometer', 'Meteorology', 'Microphone', 'Microscope', 'Mutual Impedance Probe', 'Nephelometer', 'Neutral Particle Detector', 'Neutron Detector', 'Photometer', 'Polarimeter', 'Radar', 'Radio Receiver', 'Radio Science', 'Radiometer', 'Relaxation Sounder', 'Seismometer', 'Spacecraft Sensor', 'Spectrometer', 'Spectrum Analyzer', 'Sub-Surface Tool', 'Surface Tool', 'Temperature Sensor', 'Weather Station', 'Wind Tunnel'.</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>
