@@ -26,7 +26,6 @@
   <!-- Modification History
     Version 1.0.0.0 - initial dictionary
     Version 1.1.0.0 - added subtype
-    Version 1.2.0.0 - added Photometer
     Version 2.0.0.0 - reorganized Type_List class
     -->
 
@@ -302,13 +301,6 @@
           A neutron detector detects and/or counts neutrons.
         </value_meaning>
       </DD_Permissible_Value>
-
-      <DD_Permissible_Value>
-        <value>Photometer</value>
-        <value_meaning>
-          A photometer measures the intensity of electromagnetic radiation over a wavelength range at infrared and shorter wavelengths.
-        </value_meaning>
-      </DD_Permissible_Value>
       
       <DD_Permissible_Value>
         <value>Polarimeter</value>
@@ -483,6 +475,12 @@
     <submitter_name>Lyle Huber</submitter_name>
     <definition>The Type List class provides a list of values and their value meanings.</definition>
     <element_flag>true</element_flag>
+    <DD_Association>
+      <identifier_reference>Type_List</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>*</maximum_occurrences>
+    </DD_Association>
     <DD_Association>
       <identifier_reference>type</identifier_reference>
       <reference_type>attribute_of</reference_type>
