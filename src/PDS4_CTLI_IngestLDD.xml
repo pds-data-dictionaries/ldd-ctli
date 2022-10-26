@@ -469,9 +469,9 @@
   </DD_Attribute>
   
   <DD_Class>
-    <name>Type_List</name>
+    <name>Type_List_Set</name>
     <version_id>2.0</version_id>
-    <local_identifier>Type_List</local_identifier>
+    <local_identifier>Type_List_Set</local_identifier>
     <submitter_name>Lyle Huber</submitter_name>
     <definition>The Type List class provides a list of values and their value meanings.</definition>
     <element_flag>true</element_flag>
@@ -481,6 +481,15 @@
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>*</maximum_occurrences>
     </DD_Association>
+  </DD_Class>
+  
+  <DD_Class>
+    <name>Type_List</name>
+    <version_id>2.0</version_id>
+    <local_identifier>Type_List</local_identifier>
+    <submitter_name>Lyle Huber</submitter_name>
+    <definition>The Type List class provides a list of values and their value meanings.</definition>
+    <element_flag>true</element_flag>
     <DD_Association>
       <identifier_reference>type</identifier_reference>
       <reference_type>attribute_of</reference_type>
