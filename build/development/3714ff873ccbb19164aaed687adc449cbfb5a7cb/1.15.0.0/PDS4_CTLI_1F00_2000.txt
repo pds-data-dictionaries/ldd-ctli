@@ -3,16 +3,16 @@ PDS4 Local Data Dictionary Processing Report
 Configuration:
    LDDTool Version        14.1.2
    LDD Version Id:        2.0.0.0
-   LDD Label Version Id:  1.24
+   LDD Label Version Id:  1.21
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
    Time                   Wed Oct 26 15:44:00 UTC 2022
-   Common Schema          [PDS4_PDS_1I00.xsd]
-   Common Schematron      [PDS4_PDS_1I00.sch]
-   IM Version Id:         1.18.0.0
+   Common Schema          [PDS4_PDS_1F00.xsd]
+   Common Schematron      [PDS4_PDS_1F00.sch]
+   IM Version Id:         1.15.0.0
    IM Namespace Id:       pds
-   IM Label Version Id:   1.24
+   IM Label Version Id:   1.21
    IM Object Model        [UpperModel.pont]
    IM Data Dictionary     [dd11179.pins]
    IM Configuration File  [MDPTNConfigClassDisp.xml]
@@ -57,14 +57,14 @@ Parsed Input - Header:
 Parsed Input - Attributes:
 
    name                   type
-   version                1.18
+   version                1.15
    value data type        UTF8_Short_String_Collapsed
    description             The type attribute provides a character string which uniquely identifies the object. 
    minimum characters     1
    maximum characters     255
 
    name                   subtype
-   version                1.18
+   version                1.15
    value data type        UTF8_Short_String_Collapsed
    description            The subtype attribute provides additional nuance or clarity to the type attribute.
 
