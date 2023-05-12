@@ -2,9 +2,9 @@
   {
     "dataDictionary": {
       "Title": "PDS4 Data Dictionary" ,
-      "IM Version": "1.16.0.0" ,
+      "IM Version": "1.20.0.0" ,
       "LDD Version": "2.0.0.0" ,
-      "Date": "2023-05-04T00:40:25Z" ,
+      "Date": "2023-05-04T00:40:11Z" ,
       "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
       "namespaces": ["pds:", "ctli:"] ,
       "classDictionary": [
@@ -95,7 +95,7 @@
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ctli" ,
             "steward": "ctli" ,
-            "versionId": "1.16" ,
+            "versionId": "1.20" ,
             "description": "The subtype attribute provides additional nuance or clarity to the type attribute." ,
             "isNillable": "false" ,
             "isEnumerated": "false" ,
@@ -120,7 +120,7 @@
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ctli" ,
             "steward": "ctli" ,
-            "versionId": "1.16" ,
+            "versionId": "1.20" ,
             "description": " The type attribute provides a character string which uniquely identifies the object. " ,
             "isNillable": "false" ,
             "isEnumerated": "true" ,
