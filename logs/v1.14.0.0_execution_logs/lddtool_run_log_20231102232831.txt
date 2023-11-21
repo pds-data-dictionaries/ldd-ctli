@@ -1,0 +1,50 @@
+
+>>  INFO LDDTOOL Version: 14.3.0
+>>  INFO IM Version Id: 1.14.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.20
+>>  INFO Date: Thu Nov 02 23:28:32 UTC 2023
+>>  INFO PARENT_DIR: /tmp/lddtool-14.3.0
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.3.0/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.3.0/lib
+>>  WARNING Class omitted from build - Class Identifier:0001_NASA_PDS_1.pds.Schematron_Rule
+>>  WARNING Class omitted from build - Class Identifier:0001_NASA_PDS_1.pds.Schematron_Assert
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:ctli
+>>> INFO Init:  - Config.Properties Namespace Id Using:ctli
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <type> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <type> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <subtype> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> WARNING Class: <Type_List> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+
+ -- LDDTool Execution Summary --
+     3 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1E00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - IM Version: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-ctli/ldd-ctli/src/PDS4_CTLI_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_CTLI_1E00_2000.xsd
+     - ./PDS4_CTLI_1E00_2000.sch
+     - ./PDS4_CTLI_1E00_2000.xml
+     - ./export/JSON/PDS4_PDS_1E00.JSON
+
+>>  INFO Exit(0)
