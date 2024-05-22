@@ -1,12 +1,10 @@
 
->>  INFO LDDTOOL Version: 14.3.0
->>  INFO IM Version Id: 1.15.0.0
+>>  INFO LDDTOOL Version: 15.0.6
+>>  INFO IM Version Id: 1.22.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.21
->>  INFO Date: Wed Jan 17 16:32:15 UTC 2024
->>  INFO PARENT_DIR: /tmp/lddtool-14.3.0
->>  INFO SCRIPT_DIR: /tmp/lddtool-14.3.0/bin
->>  INFO LIB_DIR: /tmp/lddtool-14.3.0/lib
+>>  INFO IM Label Version Id: 1.0
+>>  INFO Date: Wed May 22 18:03:11 UTC 2024
+>>  INFO PARENT_DIR: /tmp/lddtool-15.0.6/Data/
 
 >>> INFO Init:  - Config.Properties Namespace Id Found:ctli
 >>> INFO Init:  - Config.Properties Namespace Id Using:ctli
@@ -30,19 +28,18 @@
 
 Input:
 
-     - IM Version: 1F00
+     - IM Version: 1M00
      - PDS4 Flag: true
      - LDD Flag: true
-     - IM Version: true
      - Export JSON Flag: true
 
      - Ingest LDD(s): /home/runner/work/ldd-ctli/ldd-ctli/src/PDS4_CTLI_IngestLDD.xml
 
 Output:
 
-     - ./PDS4_CTLI_1F00_2100.xsd
-     - ./PDS4_CTLI_1F00_2100.sch
-     - ./PDS4_CTLI_1F00_2100.xml
-     - ./export/JSON/PDS4_PDS_1F00.JSON
+     - ./PDS4_CTLI_1M00_2100.xsd
+     - ./PDS4_CTLI_1M00_2100.sch
+     - ./PDS4_CTLI_1M00_2100.xml
+     - ./export/JSON/PDS4_PDS_1M00.JSON
 
 >>  INFO Exit(0)
