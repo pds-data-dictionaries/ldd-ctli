@@ -1,14 +1,10 @@
 
->>  INFO LDDTOOL Version: 14.3.0
->>  INFO IM Version Id: 1.14.0.0
+>>  INFO LDDTOOL Version: 15.1.0
+>>  INFO IM Version Id: 1.20.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.20
->>  INFO Date: Wed Jan 17 16:32:14 UTC 2024
->>  INFO PARENT_DIR: /tmp/lddtool-14.3.0
->>  INFO SCRIPT_DIR: /tmp/lddtool-14.3.0/bin
->>  INFO LIB_DIR: /tmp/lddtool-14.3.0/lib
->>  WARNING Class omitted from build - Class Identifier:0001_NASA_PDS_1.pds.Schematron_Rule
->>  WARNING Class omitted from build - Class Identifier:0001_NASA_PDS_1.pds.Schematron_Assert
+>>  INFO IM Label Version Id: 1.26
+>>  INFO Date: Fri May 24 20:07:45 UTC 2024
+>>  INFO PARENT_DIR: /tmp/lddtool-15.1.0/Data/
 
 >>> INFO Init:  - Config.Properties Namespace Id Found:ctli
 >>> INFO Init:  - Config.Properties Namespace Id Using:ctli
@@ -26,13 +22,13 @@
 >>> WARNING Class: <Type_List> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
 
  -- LDDTool Execution Summary --
-     3 warning(s)
+     1 warning(s)
      0 error(s)
      0 fatal error(s)
 
 Input:
 
-     - IM Version: 1E00
+     - IM Version: 1K00
      - PDS4 Flag: true
      - LDD Flag: true
      - IM Version: true
@@ -42,9 +38,9 @@ Input:
 
 Output:
 
-     - ./PDS4_CTLI_1E00_2100.xsd
-     - ./PDS4_CTLI_1E00_2100.sch
-     - ./PDS4_CTLI_1E00_2100.xml
-     - ./export/JSON/PDS4_PDS_1E00.JSON
+     - ./PDS4_CTLI_1K00_2100.xsd
+     - ./PDS4_CTLI_1K00_2100.sch
+     - ./PDS4_CTLI_1K00_2100.xml
+     - ./export/JSON/PDS4_PDS_1K00.JSON
 
 >>  INFO Exit(0)

@@ -1,12 +1,10 @@
 
->>  INFO LDDTOOL Version: 14.3.0
+>>  INFO LDDTOOL Version: 15.1.0
 >>  INFO IM Version Id: 1.15.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.21
->>  INFO Date: Wed Jan 17 16:32:15 UTC 2024
->>  INFO PARENT_DIR: /tmp/lddtool-14.3.0
->>  INFO SCRIPT_DIR: /tmp/lddtool-14.3.0/bin
->>  INFO LIB_DIR: /tmp/lddtool-14.3.0/lib
+>>  INFO Date: Fri May 24 20:07:44 UTC 2024
+>>  INFO PARENT_DIR: /tmp/lddtool-15.1.0/Data/
 
 >>> INFO Init:  - Config.Properties Namespace Id Found:ctli
 >>> INFO Init:  - Config.Properties Namespace Id Using:ctli
