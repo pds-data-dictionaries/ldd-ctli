@@ -15,11 +15,11 @@ The PDS4 Data Dictionary, [https://pds.nasa.gov/datastandards/documents/dd/curre
 The PDS4 Information Model Specification, [https://pds.nasa.gov/datastandards/documents/im/current/](https://pds.nasa.gov/datastandards/documents/im/current/), the same information as in the PDS4 core dictionary, in a formal specification for use by programmers and data engineers
 
 
-# Overview of the {name} Local Data Dictionary
+# Overview of the CTLI Local Data Dictionary
 
 The Instrument Type Data Dictionary provides a way to classify instrument types. It also allows for similar types to be connected to each other to aid in search. This dictionary is only for use in instrument context products and so should only be used by PDS personnel when creating context products to associate with archive bundles.
 
-# How to Include the {name} Local Data Dictionary in a PDS4 Label
+# How to Include the CTLI Local Data Dictionary in a PDS4 Label
 
 ```xml
      <Instrument>
