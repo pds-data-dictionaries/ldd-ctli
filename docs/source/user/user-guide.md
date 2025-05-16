@@ -10,9 +10,9 @@ This guide describes the organization and contents of the Instrument Type (CTLI)
 This guide is intended primarily for use by PDS personnel (or their international equivalents). Context products should be both created and curated by the PDS.
 
 ## Applicable Documents
-The Planetary Data System Standards Reference, https://pds.nasa.gov/datastandards/documents/sr/current/, the complete reference for the PDS4 Information Model 
-The PDS4 Data Dictionary, https://pds.nasa.gov/datastandards/documents/dd/current/, the PDS4 core (or “common”) dictionary in an easily searchable HTML format 
-The PDS4 Information Model Specification, https://pds.nasa.gov/datastandards/documents/im/current/, the same information as in the PDS4 core dictionary, in a formal specification for use by programmers and data engineers
+The Planetary Data System Standards Reference, [https://pds.nasa.gov/datastandards/documents/sr/current/](https://pds.nasa.gov/datastandards/documents/sr/current/), the complete reference for the PDS4 Information Model 
+The PDS4 Data Dictionary, [https://pds.nasa.gov/datastandards/documents/dd/current/](https://pds.nasa.gov/datastandards/documents/dd/current/), the PDS4 core (or “common”) dictionary in an easily searchable HTML format 
+The PDS4 Information Model Specification, [https://pds.nasa.gov/datastandards/documents/im/current/](https://pds.nasa.gov/datastandards/documents/im/current/), the same information as in the PDS4 core dictionary, in a formal specification for use by programmers and data engineers
 
 
 # Overview of the {name} Local Data Dictionary
