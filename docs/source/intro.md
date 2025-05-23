@@ -1,1 +1,3 @@
-Short abstract for the namespace should go here
+The Instrument Type Data Dictionary provides a way to classify instrument types. It also allows for similar types to be connected to each other to aid in search. This dictionary is only for use in instrument context products and so should only be used by PDS personnel when creating context products to associate with archive bundles.
+
+The Instrument Type Data Dictionary is controlled by a Steward Team, the current lead of this team is Lyle Huber at the PDS Atmospheres Node (lhuber@nmsu.edu).
