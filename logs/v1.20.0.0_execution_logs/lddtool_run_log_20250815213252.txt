@@ -1,0 +1,46 @@
+
+>>  INFO LDDTOOL Version: 15.3.0
+>>  INFO IM Version Id: 1.20.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.26
+>>  INFO Date: Fri Aug 15 21:32:54 UTC 2025
+>>  INFO PARENT_DIR: /tmp/lddtool-15.3.0/Data/
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:ctli
+>>> INFO Init:  - Config.Properties Namespace Id Using:ctli
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <type> - The default minimum characters provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <type> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <type> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <subtype> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> WARNING Class: <Type_List> - An exposed class was found nested within another exposed class. Nested exposed classes should only be present if there is a specific requirement to expose the additional class.
+
+ -- LDDTool Execution Summary --
+     1 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1K00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - IM Version: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-ctli/ldd-ctli/src/PDS4_CTLI_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_CTLI_1K00_2200.xsd
+     - ./PDS4_CTLI_1K00_2200.sch
+     - ./PDS4_CTLI_1K00_2200.xml
+     - ./export/PDS4_PDS_1K00.JSON
+
+>>  INFO Exit(0)
