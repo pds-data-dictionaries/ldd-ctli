@@ -22,7 +22,7 @@
       2019-11-14: First version delivered by the Instrument Type Steward Team.
       2021-08-31: Version 2.0 to reorganize the Type_List class.
   </comment>
-  <last_modification_date_time>2025-08-14T21:00:00Z</last_modification_date_time>
+  <last_modification_date_time>2025-09-05T21:00:00Z</last_modification_date_time>
   <!-- Modification History
     Version 1.0.0.0 - initial dictionary
     Version 1.1.0.0 - added subtype
@@ -319,6 +319,13 @@
       </DD_Permissible_Value>
         
       <DD_Permissible_Value>
+        <value>Plasma Wave Receiver</value>
+        <value_meaning>
+          A plasma wave receiver detects waves in the local plasma medium using electric or magnetic antennas.
+        </value_meaning>
+      </DD_Permissible_Value>
+      
+      <DD_Permissible_Value>
         <value>Polarimeter</value>
         <value_meaning>
           A polarimeter measures the polarization of an electromagnetic wave.
@@ -512,4 +519,5 @@
   </DD_Class>
   
 </Ingest_LDD>
+
 
