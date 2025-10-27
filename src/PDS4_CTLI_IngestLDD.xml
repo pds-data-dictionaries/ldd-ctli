@@ -239,6 +239,14 @@
       </DD_Permissible_Value>
       
       <DD_Permissible_Value>
+        <value>Mechanical Properties Instrument</value>
+        <value_meaning>
+          A Mechanical Properties Instrument measures the reaction of a sample to an applied load, quantifying properties 
+          such as strength, stiffness, ductility, hardness, fracture toughness, and/or friability.
+        </value_meaning>
+      </DD_Permissible_Value>
+        
+      <DD_Permissible_Value>
         <value>Meteorology</value>
         <value_meaning>
           A meteorology instrument measures in situ meteorological conditions.
@@ -519,5 +527,6 @@
   </DD_Class>
   
 </Ingest_LDD>
+
 
 
