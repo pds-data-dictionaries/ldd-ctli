@@ -10,7 +10,7 @@
                         https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd"
                         >
   <name>Type_List</name>
-  <ldd_version_id>2.2.0.0</ldd_version_id>
+  <ldd_version_id>2.3.0.0</ldd_version_id>
   <dictionary_type>Discipline</dictionary_type>
   <full_name>Lyle Huber</full_name>
   <steward_id>ctli</steward_id>
@@ -29,6 +29,7 @@
     Version 2.0.0.0 - reorganized Type_List class
     Version 2.1.0.0 - added permissible value
     Version 2.2.0.0 - added more permissible values, implemented skos types
+    Version 2.3.0.0 - added permissible value
     -->
 
   <DD_Attribute>
@@ -527,6 +528,7 @@
   </DD_Class>
   
 </Ingest_LDD>
+
 
 
 
