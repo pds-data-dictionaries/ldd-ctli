@@ -1,96 +1,117 @@
-# PDS4 {name} Local Data Dictionary User’s Guide
-{date}  
-{author}
+PDS4 Instrument Type (CTLI) Data Dictionary User's Guide
 
-> Note to authors who use this outline: The outline is a
-> suggestion only. It includes the minimum of content needed to inform the
-> dictionary user. Authors are expected to tailor the outline to their particular
-> purposes, elaborating and providing context as needed.
+October 27, 2025
+
+L.F. Huber
 
 # Introduction
-   1. Purpose of this User’s Guide
-   1. Audience
-   1. Applicable Documents
 
-# Overview of the {name} Local Data Dictionary
+## Purpose of this User's Guide
 
-*What is this dictionary for? What kinds of products might
-use this dictionary? Who is the steward of this dictionary (person and node
-name)? How often is it updated? To whom should questions about it be directed?
-(Give an email address or link to a page with contact information.)*
+This guide describes the organization and contents of the Instrument Type (CTLI) Data Dictionary, one of several Data Dictionaries maintained by the Planetary Data System (PDS). This dictionary is used when creating labels for instrument context products.
 
-# How to Include the {name} Local Data Dictionary in a PDS4 Label
+## Audience
 
-*Briefly explain the form that a discipline dictionary
-takes: the input ingest file, the output schema, Schematron, and other files,
-which ones are necessary and which ones may be ignored.*
+This guide is intended primarily for use by PDS personnel (or their international equivalents). Context products should be both created and curated by the PDS.
 
-*Give the URL at PDS where the dictionary files may be downloaded.*
+## Applicable Documents
 
-*Give (and explain) a label snippet showing the beginning lines of a 
-label to demonstrate the use of the dictionary schema and schematron
-in the xml prolog and the root tag (preferably Product_Observational).*
+**The Planetary Data System Standards Reference**, <https://pds.nasa.gov/datastandards/documents/sr/current/>, the complete reference for the PDS4 Information Model
 
-*Give (and explain) a label snippet showing the location
-of the classes and attributes in the label; i.e., inside the Discipline_Area
-tag. Collapse the lower level classes if needed for brevity.*
+**The PDS4 Data Dictionary**, <https://pds.nasa.gov/datastandards/documents/dd/current/>, the PDS4 core (or "common") dictionary in an easily searchable HTML format
 
-*In general, for label snippets use a fixed-width font and
-consistent indentation. Color-coding is helpful. Label snippets copied from an
-Oxygen editor window will retain their color-coding when pasted here.*
+**The PDS4 Information Model Specification**, <https://pds.nasa.gov/datastandards/documents/im/current/>, the same information as in the PDS4 core dictionary, in a formal specification for use by programmers and data engineers
 
-# Organization of Classes and Attributes
+# Overview of the Instrument Type Data Dictionary
 
-*Give a schematic diagram or a list showing the hierarchy of
-classes in order of appearance in label. Refer the reader to the Definitions
-section for complete definitions. An example of such a list is given on the
-page [Filling Out The Spectral Dictionary Classes](http://sbndev.astro.umd.edu/wiki/Filling_Out_the_Spectral_Dictionary_Classes#.3CCircular_FOV.3E)
-on the PDS Small Bodies Node wiki. In this example the names of classes and attributes have hyperlinks to
-their definitions further down the page, a useful lookup tool.*
+The Instrument Type Data Dictionary provides a way to classify instrument types. It also allows for similar types to be connected to each other to aid in search. This dictionary is only for use in instrument context products and so should only be used by PDS personnel when creating context products to associate with archive bundles.
 
-*The author should take into consideration the complexity
-of the dictionary when organizing this section.  If the hierarchy is large or
-complicated, it may be helpful to break it down by class as shown in the
-following subsections, but don’t forget to provide a high-level view of how the
-classes relate to one another.*
+The Instrument Type Data Dictionary is controlled by a Steward Team, the current lead of this team is Lyle Huber at the PDS Atmospheres Node (<lhuber@nmsu.edu>).
 
-## Class 1
+# How to Include the Instrument Type Data Dictionary in a PDS4 Label
 
-*What is this class for?*
+Here is an example of how this dictionary might be used in an instrument context product:
 
-*Give a schematic diagram or a list of the attributes in this class in order of 
-appearance in label. Refer reader to Definitions section for complete definitions.*
+&lt;Instrument&gt;
 
-*Give label snippets showing use of the class and attributes, with annotations 
-as appropriate. Refer reader to Examples section for complete examples.*
+&lt;name&gt;Radio Science Subsystem&lt;/name&gt;
 
-*Explain why some things are required and others are optional.*
+&lt;Type_List_Area&gt;
 
-*List and explain any rules that apply to this class (e.g. from Schematron).*
+&lt;ctli:Type_List&gt;
 
-## Class 2
+&lt;ctli:type&gt;Radio Science&lt;/ctli:type&gt;
 
-[repeat this subsection for each class]
+&lt;/ctli:Type_List&gt;
 
-# Definitions
+&lt;/Type_List_Area&gt;
 
-*Give an alphabetical list of all classes and attributes
-with complete definitions. (Useful ones, not silly ones like "The
-map_projection_name attribute provides the name of the map projection.")*
+&lt;naif_instrument_id&gt;not applicable&lt;/naif_instrument_id&gt;
 
-*Include:*
+&lt;serial_number&gt;not applicable&lt;/serial_number&gt;
 
-- *Class or attribute name (indicate which it is; capitalize class names according to PDS4 standard)*
-- *PDS4 data type (ASCII_Short_String_Collapsed, ASCII_Real, ASCII_Date, etc.)*
-- *Definition in complete sentences*
-- *Cardinality (minimum and maximum number of values permitted)*
-- *Nillable, yes or no? Explain when it is appropriate to use a nil value*
-- *Minimum and maximum numeric values, if applicable*
-- *Minimum and maximum number of characters, if applicable*
-- *List of valid values, if applicable.*
+&lt;description&gt;
 
-# Examples
+The telecommunications system uses an X-band transponder on the spacecraft and
 
-*Give one or more examples of label snippets for real products, annotated as appropriate. 
-Make sure the examples can be successfully validated using the latest version of the PDS4 
-core dictionary and, of course, the dictionary described in this document.*
+transmitters and receivers at stations of the NASA Deep Space Network on Earth.
+
+Range and Doppler measurements made during communcations sessions can be used to
+
+determine the spacecraft trajectory; from the trajectory, Mercury's gravity field
+
+can be inferred. Measurements of occultation times can be used to obtain the
+
+planet's radius at the occultation points, refining the planet's shape model.
+
+&lt;/description&gt;
+
+&lt;/Instrument&gt;
+
+# Values and their Definitions
+
+- Accelerometer: An accelerometer measures acceleration -- rate of change of velocity -- in its own rest frame.
+- Altimeter: An altimeter measures distance above a surface. (Close match with Lidar.)
+- Atmospheric Structure Instrument: An atmospheric structure instrument measures one or more structural properties of an atmosphere. These properties may include -- but are not limited to -- pressure, temperature, density, wind speed, and wind direction. (Close match with Meteorology. Close match with Weather Station.)
+- Camera: A camera is an optical instrument that captures a still image or a sequence of images on physical media. (Exact match with Imager.)
+- Charged Particle Detector: A charged particle detector detects and/or counts charged particles, and provides information about particle properties and distributions.
+- Chemical Analyzer: A chemical analyzer uses sensors to detect the products of reactions when samples are mixed with known reagents.
+- Dust Analyzer: A dust analyzer measures the size and/or energy distribution of dust particles.
+- Electric Field Instrument: An electric field instrument measures the direction and/or strength of an electric field.
+- Gamma Ray Detector: A gamma ray detector is an instrument that detects gamma rays.
+- Gas Analyzer: A gas analyzer measures the concentration of one or more species in a mixture of neutral gases.
+- Gravimeter: A gravimeter measures gravitational acceleration.
+- Imager: An imager detects and converts information into a digital image. (Exact match with Camera).
+- Imaging Spectrometer: An imaging spectrometer acquires a spectrally-resolved image of an object or scene. Two axes of the image correspond to orthogonal spatial dimensions and the third corresponds to wavelength.
+- Interferometer: An interferometer superposes waves such that constructive and destructive interference results in patterns that can be interpreted as very small displacements at the signal source.
+- Langmuir Probe: A Langmuir probe consists of one or more electrodes used to determine in-situ plasma properties such as density and temperature from the measured potentials and currents.
+- Lidar: A lidar measures distance to a target by illuminating it with a pulsed laser and measuring the time delay of the reflected signal. (Close match with Altimeter.)
+- Magnetometer: A magnetometer measures the direction and/or strength of a magnetic field.
+- Mass Spectrometer: A mass spectrometer sorts and counts atoms, ions, and/or molecules based on their masses.
+- Mechanical Properties Instrument: A mechanical properties instrument measures the reaction of a sample to an applied load, quantifying properties such as strength, stiffness, ductility, hardness, fracture toughness, and/or friability.
+- Meteorology: A meteorology instrument measures in situ meteorological conditions. These may include -- but are not limited to -- pressure, temperature, wind speed, and wind direction. (Exact match with Weather Station and Close match with Atmospheric Structure Instrument.)
+- Microphone: A microphone converts sound waves into electrical signals.
+- Microscope: A microscope magnifies objects that are too small to be seen with the naked eye.
+- Mutual Impedance Probe: A mutual impedance probe measures in situ bulk plasma properties at radio frequencies.
+- Nephelometer: A nephelometer measures the concentration of suspended (cloud) particulates.
+- Neutral Particle Detector: A neutral particle detector detects and/or counts neutral particles, and provides information about particle properties and distributions.
+- Neutron Detector: A neutron detector detects and/or counts neutrons.
+- Photometer: A photometer is an instrument that measures the brightness of light without spatial or spectral resolution.
+- Plasma Wave Receiver: A plasma wave receiver detects waves in the local plasma medium using electric or magnetic antennas.
+- Polarimeter: A polarimeter measures the polarization of an electromagnetic wave.
+- Precision Scale: A precision scale is a device used to measure the mass of a sample.
+- Radar: A radar transmits an electromagnetic wave, then measures amplitude, time delay, frequency shift, phase shift, and/or polarization of the echo from a distant target.
+- Radio Receiver: A radio receiver detects the information in propagating electromagnetic waves collected by an antenna.
+- Radio Science: Radio science is the use of active and/or passive electromagnetic waves to probe the environment.
+- Radiometer: A radiometer measures radiant flux (power) of electromagnetic radiation.
+- Relaxation Sounder: A relaxation sounder determines the properties of a plasma by actively probing at radio frequencies at and near the plasma frequency.
+- Retroreflector Array: A retroreflector array consists of multiple objects that reflect light back towards its source.
+- Seismometer: A seismometer measures ground motions such as might be caused by earthquakes, volcanic eruptions, or explosions.
+- Spacecraft Sensor: A spacecraft sensor captures information on the status or physical condition of a spacecraft or its components. These may include, but are not limited to, temperatures, mechanical friction, currents, voltages, etc.
+- Spectrometer: A spectrometer measures an energy spectrum.
+- Spectrum Analyzer: A spectrum analyzer measures the properties of photons, charged particles, or electrical signals as a function of frequency or energy.
+- Sub-Surface Tool: A sub-surface tool probes the upper few meters of a surface to infer its properties. Examples include (but are not limited to) drills and penetrators.
+- Surface Tool: A surface tool physically probes a surface to infer its properties. Examples include (but are not limited to) brush and deployment systems.
+- Temperature Sensor: A temperature sensor measures temperature.
+- Weather Station: A weather station is a suite of instruments that measures in situ meteorological conditions. These may include -- but are not limited to -- pressure, temperature, wind speed and wind direction. (Exact match with Meteorology and Close match with Atmospheric Structure Instrument.)
+- Wind Tunnel: A wind tunnel is used to study the effects of air moving past solid objects.
