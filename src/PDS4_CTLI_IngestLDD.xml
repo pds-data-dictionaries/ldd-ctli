@@ -10,7 +10,7 @@
                         https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1Q00.xsd"
                         >
   <name>Type_List</name>
-  <ldd_version_id>2.5.0.0</ldd_version_id>
+  <ldd_version_id>2.6.0.0</ldd_version_id>
   <dictionary_type>Discipline</dictionary_type>
   <full_name>Lyle Huber</full_name>
   <steward_id>ctli</steward_id>
@@ -32,6 +32,8 @@
     Version 2.3.0.0 - added permissible value
     Version 2.4.0.0 - added permissible value
     Version 2.5.0.0 - added permissible value
+    Version 2.6.0.0 - added DD_Rule and rule_role - Error, Warning
+                    - moved skos_relation_name to proper position
     -->
 
   <DD_Attribute>
@@ -64,13 +66,13 @@
         </value_meaning>
         <Terminological_Entry>
           <name>Lidar</name>
-          <skos_relation_name>closeMatch</skos_relation_name> 
           <definition>
             A lidar measures distance to a target by illuminating it with a pulsed laser
             and measuring the time delay of the reflected signal.
           </definition>
           <language>English</language>
           <preferred_flag>false</preferred_flag>
+          <skos_relation_name>closeMatch</skos_relation_name> 
         </Terminological_Entry> 
       </DD_Permissible_Value>
       
@@ -83,7 +85,6 @@
         </value_meaning>
         <Terminological_Entry>
           <name>Meteorology</name>
-          <skos_relation_name>closeMatch</skos_relation_name>
           <definition>
             A meteorology instrument measures in situ meteorological conditions.
             These may include -- but are not limited to -- pressure, temperature, 
@@ -91,16 +92,17 @@
           </definition>
           <language>English</language>
           <preferred_flag>false</preferred_flag>
+          <skos_relation_name>closeMatch</skos_relation_name>
         </Terminological_Entry> 
         <Terminological_Entry>
           <name>Weather Station</name>
-          <skos_relation_name>closeMatch</skos_relation_name>
           <definition>
             A weather station is a suite of instruments that measures in situ meteorological conditions. These may include -- but are 
             not limited to -- pressure, temperature, wind speed and wind direction.
           </definition>
           <language>English</language>
           <preferred_flag>false</preferred_flag>
+          <skos_relation_name>closeMatch</skos_relation_name>
         </Terminological_Entry> 
       </DD_Permissible_Value>
       
@@ -111,12 +113,12 @@
         </value_meaning>
         <Terminological_Entry>
           <name>Imager</name>
-          <skos_relation_name>exactMatch</skos_relation_name>
           <definition>
             An imager detects and converts information into a digital image.
           </definition>
           <language>English</language>
           <preferred_flag>false</preferred_flag>
+          <skos_relation_name>exactMatch</skos_relation_name>
         </Terminological_Entry> 
       </DD_Permissible_Value>
 
@@ -191,12 +193,12 @@
         </value_meaning>
         <Terminological_Entry>
           <name>Camera</name>
-          <skos_relation_name>exactMatch</skos_relation_name>
           <definition>
             A camera is an optical instrument that captures a still image or a sequence of images on physical media.
           </definition>
           <language>English</language>
           <preferred_flag>false</preferred_flag>
+          <skos_relation_name>exactMatch</skos_relation_name>
         </Terminological_Entry> 
       </DD_Permissible_Value>
       
@@ -232,12 +234,12 @@
         </value_meaning>
         <Terminological_Entry>
           <name>Altimeter</name>
-          <skos_relation_name>closeMatch</skos_relation_name>
           <definition>
             An altimeter measures distance above a surface.
           </definition>
           <language>English</language>
           <preferred_flag>false</preferred_flag>
+          <skos_relation_name>closeMatch</skos_relation_name>
         </Terminological_Entry> 
       </DD_Permissible_Value>
       
@@ -272,17 +274,16 @@
         </value_meaning>
         <Terminological_Entry>
           <name>Weather Station</name>
-          <skos_relation_name>exactMatch</skos_relation_name>
           <definition>
             A weather station is a suite of instruments that measures in situ meteorological conditions. 
             These may include -- but are not limited to -- pressure, temperature, wind speed and wind direction.
           </definition>
           <language>English</language>
           <preferred_flag>false</preferred_flag>
+          <skos_relation_name>exactMatch</skos_relation_name>
         </Terminological_Entry>        
         <Terminological_Entry>
           <name>Atmospheric Structure Instrument</name>
-          <skos_relation_name>closeMatch</skos_relation_name>
           <definition>
             An atmospheric structure instrument measures one or more structural properties of an atmosphere.
             These properties may include -- but are not limited to -- pressure, temperature,
@@ -290,6 +291,7 @@
           </definition>
           <language>English</language>
           <preferred_flag>false</preferred_flag>
+          <skos_relation_name>closeMatch</skos_relation_name>
         </Terminological_Entry> 
       </DD_Permissible_Value>
       
@@ -464,16 +466,15 @@
         </value_meaning>
         <Terminological_Entry>
           <name>Meteorology</name>
-          <skos_relation_name>exactMatch</skos_relation_name>
           <definition>A meteorology instrument measures in situ meteorological conditions.
             These may include -- but are not limited to -- pressure, temperature, 
             wind speed, and wind direction.</definition>
           <language>English</language>
           <preferred_flag>false</preferred_flag>
+          <skos_relation_name>exactMatch</skos_relation_name>
         </Terminological_Entry> 
         <Terminological_Entry>
           <name>Atmospheric Structure Instrument</name>
-          <skos_relation_name>closeMatch</skos_relation_name>
           <definition>
             An atmospheric structure instrument measures one or more structural properties of an atmosphere.
             These properties may include -- but are not limited to -- pressure, temperature,
@@ -481,6 +482,7 @@
           </definition>
           <language>English</language>
           <preferred_flag>false</preferred_flag>
+          <skos_relation_name>closeMatch</skos_relation_name>
         </Terminological_Entry> 
       </DD_Permissible_Value>
       
@@ -542,6 +544,18 @@
       <maximum_occurrences>*</maximum_occurrences>
     </DD_Association>  
   </DD_Class>
+  
+  <DD_Rule>
+    <local_identifier>deprecate_type_list_set</local_identifier>
+    <rule_context>ctli:Type_List_Set</rule_context>
+    <DD_Rule_Statement>
+      <rule_type>Assert</rule_type>
+      <rule_test>false()</rule_test>
+      <rule_message>ctli:Type_List_Set is deprecated and should not be used.</rule_message>
+      <rule_description>Deprecate the Type_List_Set class since the cardinality of Type_List now allows multiple type to be specified.</rule_description>
+      <rule_role>Warning</rule_role>
+    </DD_Rule_Statement>
+  </DD_Rule>
   
 </Ingest_LDD>
 
