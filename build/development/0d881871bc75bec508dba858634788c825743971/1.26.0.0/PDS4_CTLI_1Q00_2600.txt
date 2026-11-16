@@ -7,10 +7,10 @@ Configuration:
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Thu Nov 12 19:46:47 UTC 2026
-   Common Schema          [PDS4_PDS_1N00.xsd]
-   Common Schematron      [PDS4_PDS_1N00.sch]
-   IM Version Id:         1.23.0.0
+   Time                   Mon Nov 16 21:16:33 UTC 2026
+   Common Schema          [PDS4_PDS_1Q00.xsd]
+   Common Schematron      [PDS4_PDS_1Q00.sch]
+   IM Version Id:         1.26.0.0
    IM Namespace Id:       pds
    IM Label Version Id:   1.0
    IM Object Model        [UpperModel.pont]
@@ -56,14 +56,14 @@ Parsed Input - Header:
 Parsed Input - Attributes:
 
    name                   type
-   version                1.23
+   version                1.26
    value data type        UTF8_Short_String_Collapsed
    description             The type attribute provides a character string which uniquely identifies the object. 
    minimum characters     1
    maximum characters     255
 
    name                   subtype
-   version                1.23
+   version                1.26
    value data type        UTF8_Short_String_Collapsed
    description            The subtype attribute provides additional nuance or clarity to the type attribute.
 
